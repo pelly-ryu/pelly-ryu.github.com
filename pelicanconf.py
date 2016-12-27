@@ -34,8 +34,18 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PLUGIN_PATHS = ['../pelican-plugins/pelican-plugins']
-PLUGINS = [u"disqus_static",]
+## THEME
+THEME = 'bulrush'
+THEME_STATIC_DIR = 'themes'
+THEME_STATIC_PATHS = ['static']
+
+## for bulrush
+#JINJA_ENVIRONMENT = {'extensions':['webassets.ext.jinja2.jinja2', 'AssetsExtension.ext.with_']}
+JINJA_EXTENSIONS = ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
+
+## DISQUS
+PLUGIN_PATHS = ['./pelican-plugins']
+PLUGINS = ['assets', 'disqus_static', 'pelican-materialbox']
 
 DISQUS_SITENAME = u'vegaswalker-blog'
 DISQUS_SECRET_KEY = u'dRH1AJdfVsjprKvS6Qvn6pMrfrWiZXTH2bHTnnyH4KlGmew7vUOJ9GZaG22QuiHs'
