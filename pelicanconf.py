@@ -39,6 +39,9 @@ THEME = 'bulrush'
 THEME_STATIC_DIR = 'themes'
 THEME_STATIC_PATHS = ['static']
 
+## google analytics
+GOOGLE_ANALYTICS = 'UA-89568028-1'
+
 ## for bulrush
 #JINJA_ENVIRONMENT = {'extensions':['webassets.ext.jinja2.jinja2', 'AssetsExtension.ext.with_']}
 JINJA_EXTENSIONS = ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_']
