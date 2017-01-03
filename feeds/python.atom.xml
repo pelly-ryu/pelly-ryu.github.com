@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.vegaswalker.net - Python</title><link href="http://blog.vegaswalker.net/" rel="alternate"></link><link href="http://blog.vegaswalker.net/feeds/python.atom.xml" rel="self"></link><id>http://blog.vegaswalker.net/</id><updated>2017-01-01T23:14:00+09:00</updated><entry><title>여전히 스트레스 받는 Django deployment</title><link href="http://blog.vegaswalker.net/yeojeonhi-seuteureseu-badneun-django-deployment.html" rel="alternate"></link><published>2017-01-01T23:14:00+09:00</published><updated>2017-01-01T23:14:00+09:00</updated><author><name>pelly</name></author><id>tag:blog.vegaswalker.net,2017-01-01:/yeojeonhi-seuteureseu-badneun-django-deployment.html</id><summary type="html">&lt;p&gt;13, 14년 당시 Django 버전이 1.5였나 1.6 정도로 기억한다. 불편한 점이 한둘이 아니었다. 데이터베이스 마이그레이션을 위해 써드파티를 사용해야 했다.(어떤 의미에선 node 생태계가 연상되기도 한다.) 올해 들어 1.9랑 1.10을 써 보니 그때보다는 사정이 많이 낫더라. 여러모로 편리해진 부분도 많고, 나름 대격변을 겪었던 것 같다.&lt;/p&gt;
+&lt;p&gt;나랑 Django가 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;13, 14년 당시 Django 버전이 1.5였나 1.6 정도로 기억한다. 불편한 점이 한둘이 아니었다. 데이터베이스 마이그레이션을 위해 써드파티를 사용해야 했다.(어떤 의미에선 node 생태계가 연상되기도 한다.) 올해 들어 1.9랑 1.10을 써 보니 그때보다는 사정이 많이 낫더라. 여러모로 편리해진 부분도 많고, 나름 대격변을 겪었던 것 같다.&lt;/p&gt;
+&lt;p&gt;나랑 Django가 뭔가 기운이 안 맞는 건지, 유달리 Django 배포 때면 스트레스를 왕창 받는다. 삽질 시간도 한참 걸린다. Spring Boot도 node.js도 써봤는데 Django가 가장 이래저래 짜증난다. PHP가 그토록 싫건만, 설정 몇 줄이면 불만 없이 쌩쌩 돌아갈 때는 속이 시원하다. 지금보다 한참 복잡했던 14년 때는 폭발해서 다시는 Django 따위 손도 대지 않겠다고 선언했었다. Python을 굳이 하고 싶으면 Flask나 새로 배워서 쓰리라고.&lt;/p&gt;
+&lt;p&gt;기운이 안 맞는 만큼이나 악연도 질겼다. 16년에 한 프로젝트에 참가하고 보니 Django(DRF)였다. 다행히 내가 Deploy 담당이 아니라서 그냥 개발만 했다. 간만의 Python. 역시 좋긴 좋더라. 난 이러니 저러니 해도 Python이 좋다. 코딩이 즐겁다.&lt;/p&gt;
+&lt;p&gt;그래서 또 나빴던 인상 좀 깔끔해지고, 이번 개인 프로젝트로 Django를 또 써 보려고 마음 먹었던 것이다. 그런데 왜 이 놈의 Django가 라이브 서버에 올라가지를 않는 것인지. 대체 내가 뭘 잘못한 건지. 설정 하나 해줘야 한대서 해줬더니 이젠 왜 다른 에러가 나오는 것인지. 아니, 이런 간단한 설정쯤은 대충 자동화로 해주면 안 되나? application은 진짜 이런 설계가 최선인가?&lt;/p&gt;
+&lt;p&gt;요새 그런 생각도 든다. 끝도 없이 많은 언어와 프레임워크와 기술과 서버 환경의 범람 속에서, 개발자를 정말로 스트레스 받게 하는 건 Redux의 이해 같은 부분이 아닌 것 같다. 지들 마음대로 각자 편하다며 만들어 놓은 온갖 설정법과 트릭과 패키지들의 폭풍에 휩싸여서, 영양가 없는 것을 머리 속에 구겨넣느라(또는 구글에서 검색하느라) 보내는 세월이 분노의 주범이다. 설계에 대한 고민 같은 것 없이, stackoverflow의 답변 따라서 파일 위치 같은 것이나 받아 적고 있노라면 내가 이러려고 개발자하나 자괴감이 들지 않을 수가 없다. 예전에는 그래도 한두 기술에 익숙해지면 한참을 울궈먹고 살았다만, 그런 시대도 아니지 않는가.&lt;/p&gt;
+&lt;p&gt;이미 다룰 수 있는 웹프레임워크를 가지고 있으면서, 시간을 굳이 쪼개가며 새로운 웹프레임워크를 배우는 개발자가 많다. 그들을 탓하는 말이 아니다. 나 또한 그 중 하나다. 그러나 이것이야 말로 개발자의 모든 업무 중 가장 최우선적으로 AI에게 대체될 부분 아닌가. 프레임워크에 담긴 철학을 이해한다고는 하지만, 실상 학습시간의 대부분은 최초 세팅법, 배포하는 법, 자주 만나는 오류 해결법 같은 내용을 배우느라 쓰이곤 하지 않던가.&lt;/p&gt;
+&lt;p&gt;프로그래머와 트러블슈터가 사실은 동의어가 아닌지. 그런 생각을 자주 한다. 그렇지 않다는 것을 알고 있으면서도 종종 회의감이 든다.&lt;/p&gt;
+</content></entry><entry><title>disqus-python In Python3</title><link href="http://blog.vegaswalker.net/disqus-python-in-python3.html" rel="alternate"></link><published>2016-12-27T02:03:00+09:00</published><updated>2016-12-27T02:03:00+09:00</updated><author><name>pelly</name></author><id>tag:blog.vegaswalker.net,2016-12-27:/disqus-python-in-python3.html</id><summary type="html">&lt;p&gt;disqus-python를 pip를 통해 설치할 경우,
+제대로 최신 버전이 설치되지 않는다.
+pypi의 패키지 관리를 제대로 안 하는 모양.&lt;/p&gt;
+&lt;p&gt;Python3에서 정상작동하지 않으므로,
+언인스톨 후 github를 통해 다시 설치해야 한다.&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+pip3 install git+git://github.com/disqus/disqus-python@master
+&lt;/pre&gt;
+</summary><content type="html">&lt;p&gt;disqus-python를 pip를 통해 설치할 경우,
+제대로 최신 버전이 설치되지 않는다.
+pypi의 패키지 관리를 제대로 안 하는 모양.&lt;/p&gt;
+&lt;p&gt;Python3에서 정상작동하지 않으므로,
+언인스톨 후 github를 통해 다시 설치해야 한다.&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+pip3 install git+git://github.com/disqus/disqus-python@master
+&lt;/pre&gt;
+</content></entry></feed>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>blog.vegaswalker.net - Test</title><link href="http://blog.vegaswalker.net/" rel="alternate"></link><link href="http://blog.vegaswalker.net/feeds/test.atom.xml" rel="self"></link><id>http://blog.vegaswalker.net/</id><updated>2016-12-27T00:17:00+09:00</updated><entry><title>first_post</title><link href="http://blog.vegaswalker.net/first_post.html" rel="alternate"></link><published>2016-12-27T00:17:00+09:00</published><updated>2016-12-27T00:17:00+09:00</updated><author><name>pelly</name></author><id>tag:blog.vegaswalker.net,2016-12-27:/first_post.html</id><summary type="html">&lt;p&gt;Hello World!&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Hello World!&lt;/p&gt;
+</content></entry></feed>
